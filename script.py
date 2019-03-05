@@ -351,8 +351,8 @@ def main():
     # start_polling() is non-blocking and will stop the bot gracefully.
     updater.idle()
 
-# if __name__ == '__main__':
-     main();
+if __name__ == '__main__':
+  main();
 #     app.run(host='0.0.0.0', port=5000);
 
 #app.run(environ.get('PORT'))
