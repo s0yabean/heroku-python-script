@@ -1,0 +1,7 @@
+Flask==1.0.2
+gunicorn==19.5.0
+requests==2.20.0
+jsonschema==2.6.0
+simplejson==3.16.0
+emoji==0.5.1
+python-telegram-bot==11.1.0
