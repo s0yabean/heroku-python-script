@@ -1,10 +1,6 @@
 # #!/usr/bin/env python
 # # -*- coding: utf-8 -*-
 
-from os import environ
-from flask import Flask
-import time
-from flask import Flask, request, jsonify
 from emoji import emojize
 import logging
 import requests
@@ -15,17 +11,6 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Rege
 from telegram.error import (TelegramError, Unauthorized, BadRequest,
                             TimedOut, ChatMigrated, NetworkError)
 # Emoji: https://www.webfx.com/tools/emoji-cheat-sheet/
-
-app = Flask(__name__)
-
-#while True:
-#    print("This prints once every 5 seconds")
-#    time.sleep(5);
-
-# Settings
-#app = Flask(__name__)
-#app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy dog'
-# CORS(app, expose_headers='X-Api-Key') # Need to include any (key-value) keys for any thing I want my client to receive, else it would not be revealed!
 
 ## GLOBAL VARIABLE TO BACKEND #####################################################################################################################################
 
@@ -366,10 +351,8 @@ def main():
     # start_polling() is non-blocking and will stop the bot gracefully.
     updater.idle()
 
-main();
-
 # if __name__ == '__main__':
-#     main();
+     main();
 #     app.run(host='0.0.0.0', port=5000);
 
-app.run(environ.get('PORT'))
+#app.run(environ.get('PORT'))
